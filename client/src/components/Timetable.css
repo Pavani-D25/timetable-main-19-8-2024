@@ -1,0 +1,99 @@
+/* Timetable container styling */
+.timetable {
+    margin-top: 56px; /* Space below the navbar */
+    margin-left: 230px; /* Space for the sidebar on large screens */
+    padding: 20px;
+    width: calc(100% - 230px); /* Adjust width considering sidebar */
+    background-color: #f8f9fa; /* Light background color for better readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Heading styling */
+.heading {
+    margin-top: 56px; /* Space below the navbar */
+    margin-left: 230px; /* Space for the sidebar on large screens */
+    padding: 20px;
+    width: calc(100% - 230px); /* Same width adjustment as timetable */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the heading bold */
+    color: #343a40; /* Dark color for visibility */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Table styling */
+.timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Table header and cell styling */
+.timetable-table th, .timetable-table td {
+    border: 1px solid #dee2e6; /* Light gray border for table cells */
+    padding: 12px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.timetable-table th {
+    background-color: #343a40; /* Dark background for table headers */
+    color: white;
+}
+
+.timetable-table tr:nth-child(even) {
+    background-color: #e9ecef; /* Light gray for even rows */
+}
+
+.timetable-table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on row hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .timetable,
+    .heading {
+        margin-left: 0; /* Remove margin for small screens */
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .timetable-table th, .timetable-table td {
+        font-size: 12px; /* Smaller font size on mobile */
+        padding: 8px; /* Reduced padding on mobile */
+    }
+    
+    /* Adjust heading size for smaller screens */
+    .heading {
+        font-size: 20px; /* Smaller font size for smaller screens */
+        margin-left: 0; /* Remove left margin on small screens */
+        padding: 15px; /* Reduce padding on small screens */
+    }
+
+    /* Adjust timetable container padding for smaller screens */
+    .timetable {
+        padding: 15px; /* Reduced padding on small screens */
+        margin-top: 80px; /* Adjust top margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .timetable-table th, .timetable-table td {
+        font-size: 10px; /* Further reduce font size on extra small screens */
+        padding: 6px; /* Further reduce padding on extra small screens */
+    }
+
+    /* Adjust heading size for extra small screens */
+    .heading {
+        font-size: 18px; /* Even smaller font size for extra small screens */
+        padding: 10px; /* Further reduce padding on extra small screens */
+    }
+
+    /* Adjust timetable container padding for extra small screens */
+    .timetable {
+        padding: 10px; /* Further reduced padding on extra small screens */
+        margin-top: 60px; /* Adjust top margin for extra small screens */
+    }
+}

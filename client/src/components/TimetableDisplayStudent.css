@@ -1,0 +1,68 @@
+/* Timetable container styling */
+.timetable-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: auto; 
+    margin-left: 256px;/* Enable horizontal scrolling if the table is too wide */
+}
+
+/* Table styling */
+.timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure table layout doesn't overflow */
+}
+
+/* Table header and cell styling */
+.timetable-table th, .timetable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Table header styling */
+.timetable-table th {
+    background-color: #f4f4f4;
+}
+
+/* Table cell styling */
+.timetable-table td {
+    vertical-align: top;
+}
+
+/* Empty cell styling */
+.empty-cell {
+    background-color: #f9f9f9; /* Light gray for empty cells */
+}
+
+/* Row hover effect */
+.timetable-table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on row hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .timetable-container {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .timetable-table th, .timetable-table td {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        padding: 6px; /* Adjust padding for better space management */
+    }
+}
+
+@media (max-width: 768px) {
+    .timetable-table th, .timetable-table td {
+        font-size: 12px; /* Smaller font size on mobile */
+        padding: 4px; /* Reduced padding on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .timetable-table th, .timetable-table td {
+        font-size: 10px; /* Further reduced font size on extra small screens */
+        padding: 2px; /* Further reduced padding on extra small screens */
+    }
+}
